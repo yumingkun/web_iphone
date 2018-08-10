@@ -192,3 +192,40 @@
 .screen-2_point_i_1:before,.screen-2_point_i_1:after{
     left: 146px;
 }
+
+
+/*导航条样式*/
+.header{
+    transition: all 1s;
+}
+
+.header_status_back{
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index:3;
+}
+.header_status_back .header_logo,
+.header_status_back .header_nav-item{
+    color: #fff;
+}
+/*导航变红*/
+.header_status_back .header_nav-item_status_active{
+    color: #ff0026;
+}
+/*侧边变红*/
+.outline_item_status_active{
+    color: #f01400;
+}
+/*侧栏动画*/
+.outline{
+    opacity: 0;
+    transition: all 1s;
+    transform: translate(100% 0);
+}
+.outline_status_in{
+    opacity: 1;
+    transform: translate(0, 0);
+}
